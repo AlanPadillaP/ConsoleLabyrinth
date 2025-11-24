@@ -4,7 +4,7 @@ Juego de laberinto en consola donde un jugador debe evadir enemigos mientras nav
 
 ## 🧩 Descripción general
 
-**ConsoleLabyrinth** es un proyecto escrito en C++, ejecutado totalmente en la consola.  
+**ConsoleLabyrinth** es un proyecto escrito en **C++**, ejecutado totalmente en la consola.  
 El juego carga mapas, enemigos y pantallas decorativas desde archivos `.txt`, y utiliza un sistema modular basado en clases, herencia y componentes separados en archivos `.h` y `.cpp`.
 
 El objetivo del jugador (representado por el símbolo `4`) es llegar a la meta (símbolo `@`) mientras evita a los enemigos que se desplazan dinámicamente dentro del mapa.
@@ -12,7 +12,7 @@ El objetivo del jugador (representado por el símbolo `4`) es llegar a la meta (
 ---
 
 ## 📂 Estructura del proyecto
-
+```
 ConsoleLabyrinth/
 ├── src/
 │ ├── EnemyManager.cpp
@@ -43,9 +43,9 @@ ConsoleLabyrinth/
 │ 
 │
 ├── README.md
-└── LICENSE (opcional)
+└── LICENSE 
 
-
+```
 ---
 
 ## 🕹️ Mecánicas del juego
@@ -59,12 +59,11 @@ A = izquierda
 S = abajo
 D = derecha
 
-- **Meta:**  
-Llega al símbolo **@** para ganar.
-- **Jugador:** representado como `4`
+- **Meta:** Llega al símbolo **$** para ganar.
+- **Jugador:** Representado como `4`
 - **Enemigos:** se mueven automáticamente:
-- Persecución si hay proximidad con el jugador.
-- Movimiento aleatorio si no pueden seguirlo.
+  - Persecución si hay proximidad con el jugador.
+  - Movimiento aleatorio si no pueden seguirlo.
 - **Pantallas de estado:**
 - `Intro.txt` para menú inicial  
 - `Victory.txt` al ganar  
